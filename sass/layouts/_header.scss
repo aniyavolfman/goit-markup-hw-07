@@ -1,0 +1,125 @@
+.top {
+    background-color: var(--third-web-text-color);
+    border-bottom: 1px solid var(--header-border);
+}
+
+.top-flex {
+    display: flex;
+    align-items: center;
+}
+
+.web-studio-header {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--web-text-color);
+}
+
+.web-color {
+    color: var(--secondary-web-text-color);
+}
+
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+    gap: 50px;
+}
+
+.site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+.site-nav .item .top-link {
+    color: var(--main-text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav .item .link.current {
+
+    color: var(--secondary-web-text-color);
+}
+
+.site-nav .item .link.current-portfolio {
+
+    color: var(--secondary-web-text-color);
+}
+
+.current::before {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    background-color: var(--secondary-web-text-color);
+    width: 48px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+}
+
+.current-portfolio::before {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    background-color: var(--secondary-web-text-color);
+    width: 78px;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+}
+
+.navigation {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
+    
+}
+
+.site-nav .item .top-link:hover,
+.site-nav .item .top-link:focus {
+    color: var(--secondary-web-text-color);
+}
+
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-nav .item+.item {
+    margin-left: 50px;
+}
+
+.telephone-mail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--contacts);
+    vertical-align: middle;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.telephone-mail:hover,
+.telephone-mail:focus {
+    color: var(--secondary-web-text-color);
+}
+
+.icon-header {
+    vertical-align: middle;
+    fill: currentColor;
+}

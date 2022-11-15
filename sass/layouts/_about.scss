@@ -1,0 +1,34 @@
+.list.images {
+    gap: 30px;
+}
+
+.gap-img {
+    width: calc((100% - 60px) / 3);
+}
+
+.box-relative {
+    position: relative;
+}
+
+.box-relative::before {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    background-color: var(--overlay-color-secondary);
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+}
+
+.box-absolute {
+    position: absolute;
+    top: 251px;
+    left: 107px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--third-web-text-color);
+}
