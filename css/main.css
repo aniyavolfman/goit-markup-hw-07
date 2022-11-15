@@ -832,7 +832,7 @@ textarea {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.about:hover .about {
+.animation:hover .about {
   transform: translate(-50%, -50%);
 }
 
