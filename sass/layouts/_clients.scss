@@ -15,10 +15,10 @@
     transition-property: color, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+            color: var(--secondary-web-text-color);
+            border: 1px solid var(--secondary-web-text-color);
+        }
 }
 
-.link-clients:hover,
-.link-clients:focus {
-    color: var(--secondary-web-text-color);
-    border: 1px solid var(--secondary-web-text-color);
-}

@@ -16,10 +16,13 @@
 .contacts-info {
     font-style: normal;
     margin-top: 20px;
+    & .item+.item {
+            margin-top: 9px;
+        }
 }
 
 .web-studio-footer {
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--secondary-font), sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -27,15 +30,16 @@
     color: var(--third-web-text-color);
 }
 
-.contacts-info .item+.item {
-    margin-top: 9px;
-}
 
 .location {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--third-web-text-color);
+    &:hover,
+    &:focus {
+            color: var(--secondary-web-text-color);
+        }
 }
 
 .contacts {
@@ -46,16 +50,10 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contacts:hover,
-.contacts:focus {
-    color: var(--secondary-web-text-color);
-}
-
-.location:hover,
-.location:focus {
-    color: var(--secondary-web-text-color);
+    &:hover,
+    &:focus {
+            color: var(--secondary-web-text-color);
+        }
 }
 
 .join {
@@ -87,12 +85,11 @@
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-link-media:hover,
-.footer-link-media:focus {
-    background-color: var(--secondary-web-text-color);
-    color: var(--third-web-text-color);
+    &:hover,
+    &:focus {
+            background-color: var(--secondary-web-text-color);
+            color: var(--third-web-text-color);
+        }
 }
 
 .footer-item-media {
@@ -109,6 +106,15 @@
     justify-content: center;
     align-items: center;
     gap: 12px;
+    & input {
+            min-width: 358px;
+            min-height: 50px;
+            border: 1px solid var(--form-footer-color);
+            background-color: var(--background-dark);
+            border-radius: 4px;
+            padding: 15px 16px 15px 65px;
+            color: var(--background-rgba);
+        }
 }
 
 .button-footer-form {
@@ -137,15 +143,6 @@
     vertical-align: middle;
 }
 
-.footer-form input {
-    min-width: 358px;
-    min-height: 50px;
-    border: 1px solid var(--form-footer-color);
-    background-color: var(--background-dark);
-    border-radius: 4px;
-    padding: 15px 16px 15px 65px;
-    color: var(--background-rgba);
-}
 
 .footer-label {
     position: absolute;

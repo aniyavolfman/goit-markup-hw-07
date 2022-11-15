@@ -64,13 +64,13 @@
     transition-property: background-color, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+            background-color: var(--secondary-web-text-color);
+            color: var(--third-web-text-color);
+        }
 }
 
-.link-media:hover,
-.link-media:focus {
-    background-color: var(--secondary-web-text-color);
-    color: var(--third-web-text-color);
-}
 
 .team-icon {
     fill: currentColor;

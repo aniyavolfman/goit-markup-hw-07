@@ -1,8 +1,8 @@
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+    &.no-padding {
+            padding-bottom: 0;
+        }
 }
 
-.section.no-padding {
-    padding-bottom: 0;
-}

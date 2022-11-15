@@ -8,16 +8,15 @@
 
 .box-relative {
     position: relative;
-}
-
-.box-relative::before {
-    display: inline-block;
-    position: absolute;
-    content: '';
-    background-color: var(--overlay-color-secondary);
-    width: 370px;
-    height: 70px;
-    bottom: 0;
+    &::before {
+            display: inline-block;
+            position: absolute;
+            content: '';
+            background-color: var(--overlay-color-secondary);
+            width: 370px;
+            height: 70px;
+            bottom: 0;
+        }
 }
 
 .box-absolute {
