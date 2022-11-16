@@ -505,21 +505,21 @@ textarea {
   fill: currentColor;
 }
 
-.section-first {
+.hero {
   background-color: var(--background-dark);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-.overlay {
+.hero--decorated {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
   background-repeat: no-repeat;
   background-size: 1600px 600px;
   background-position: center;
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -533,7 +533,7 @@ textarea {
   margin-right: auto;
 }
 
-.hero-btn {
+.hero__btn {
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -547,7 +547,7 @@ textarea {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-btn:hover, .hero-btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: var(--button-active);
 }
 

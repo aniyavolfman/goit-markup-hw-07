@@ -1,11 +1,11 @@
-.section-first {
+.hero {
     background-color: var(--background-dark);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
 }
 
-.overlay {
+.hero--decorated {
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
@@ -14,7 +14,7 @@
     background-position: center;
 }
 
-.hero-title {
+.hero__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -28,7 +28,7 @@
     margin-right: auto;
 }
 
-.hero-btn {
+.hero__btn {
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
