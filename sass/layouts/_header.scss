@@ -1,14 +1,15 @@
-.top {
+.header {
     background-color: var(--third-web-text-color);
     border-bottom: 1px solid var(--header-border);
 }
 
-.top-flex {
+.header__container, .header__navigation {
     display: flex;
     align-items: center;
 }
 
-.web-studio-header {
+
+.header__link {
     font-family: var(--secondary-font), sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -17,7 +18,7 @@
     color: var(--web-text-color);
 }
 
-.web-color {
+.header__logo {
     color: var(--secondary-web-text-color);
 }
 
@@ -30,29 +31,29 @@
             padding-top: 32px;
             padding-bottom: 32px;
         }
-    &  .top-link {
+    &  .site-nav__link--top {
             color: var(--main-text-color);
             transition-property: color;
             transition-duration: 250ms;
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
-    &  .link.current {
+    &  .link.site-nav__link--current {
     
             color: var(--secondary-web-text-color);
         }
     
-    &  .link.current-portfolio {
+    &  .link.site-nav__link--current-portfolio {
     
             color: var(--secondary-web-text-color);
         }
         
-    & .top-link:hover,
-    & .top-link:focus {
+    & .site-nav__link--top:hover,
+    & .site-nav__link--top:focus {
             color: var(--secondary-web-text-color);
         }
 }
 
-.current {
+.site-nav__link--current {
     &::before {
             display: inline-block;
             position: absolute;
@@ -67,7 +68,7 @@
 
 }
 
-.current-portfolio {
+.site-nav__link--current-portfolio {
     &::before {
         display: inline-block;
         position: absolute;
@@ -82,7 +83,7 @@
 }
 
 
-.navigation {
+.menu {
     position: relative;
     font-weight: 500;
     font-size: 14px;
@@ -119,7 +120,7 @@
         }
 }
 
-.icon-header {
+.auth-nav__icon {
     vertical-align: middle;
     fill: currentColor;
 }

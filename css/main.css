@@ -393,17 +393,17 @@ textarea {
   padding-bottom: 0;
 }
 
-.top {
+.header {
   background-color: var(--third-web-text-color);
   border-bottom: 1px solid var(--header-border);
 }
 
-.top-flex {
+.header__container, .header__navigation {
   display: flex;
   align-items: center;
 }
 
-.web-studio-header {
+.header__link {
   font-family: var(--secondary-font), sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -412,7 +412,7 @@ textarea {
   color: var(--web-text-color);
 }
 
-.web-color {
+.header__logo {
   color: var(--secondary-web-text-color);
 }
 
@@ -426,23 +426,23 @@ textarea {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.site-nav .top-link {
+.site-nav .site-nav__link--top {
   color: var(--main-text-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.site-nav .link.current {
+.site-nav .link.site-nav__link--current {
   color: var(--secondary-web-text-color);
 }
-.site-nav .link.current-portfolio {
+.site-nav .link.site-nav__link--current-portfolio {
   color: var(--secondary-web-text-color);
 }
-.site-nav .top-link:hover, .site-nav .top-link:focus {
+.site-nav .site-nav__link--top:hover, .site-nav .site-nav__link--top:focus {
   color: var(--secondary-web-text-color);
 }
 
-.current::before {
+.site-nav__link--current::before {
   display: inline-block;
   position: absolute;
   content: "";
@@ -454,7 +454,7 @@ textarea {
   border-radius: 2px;
 }
 
-.current-portfolio::before {
+.site-nav__link--current-portfolio::before {
   display: inline-block;
   position: absolute;
   content: "";
@@ -466,7 +466,7 @@ textarea {
   border-radius: 2px;
 }
 
-.navigation {
+.menu {
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -500,7 +500,7 @@ textarea {
   color: var(--secondary-web-text-color);
 }
 
-.icon-header {
+.auth-nav__icon {
   vertical-align: middle;
   fill: currentColor;
 }
