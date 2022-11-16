@@ -1,12 +1,13 @@
-.list.images {
+.soc-list {
+    display: flex;
     gap: 30px;
 }
 
-.gap-img {
+.soc-list__item {
     width: calc((100% - 60px) / 3);
 }
 
-.box-relative {
+.soc-list__box {
     position: relative;
     &::before {
             display: inline-block;
@@ -19,10 +20,10 @@
         }
 }
 
-.box-absolute {
+.soc-list__text {
     position: absolute;
     top: 251px;
-    left: 107px;
+    left: 50%;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14px;
@@ -30,4 +31,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--third-web-text-color);
+    transform: translateX(-50%);
+
 }

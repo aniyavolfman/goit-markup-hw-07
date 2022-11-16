@@ -1,9 +1,9 @@
-.clients {
+.icon-list {
     display: flex;
     justify-content: space-between;
 }
 
-.link-clients {
+.icon-list__link {
     display: inline-flex;
     color: var(--media-color);
     width: 170px;
@@ -22,3 +22,6 @@
         }
 }
 
+.icon-list__icon--fill {
+    fill: currentColor;
+}
