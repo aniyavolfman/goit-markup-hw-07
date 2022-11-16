@@ -857,6 +857,10 @@ textarea {
   margin-right: 70px;
 }
 
+.web-color {
+  color: var(--secondary-web-text-color);
+}
+
 .contacts-info {
   font-style: normal;
   margin-top: 20px;
